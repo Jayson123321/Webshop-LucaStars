@@ -1,0 +1,56 @@
+{
+    "name": "webshop",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "node": "18"
+    },
+    "workspaces": [
+        "src/*"
+    ],
+    "scripts": {
+        "dev": "run-p dev:api dev:web",
+        "dev:api": "npm run dev -w src/api",
+        "dev:web": "npm run dev -w src/web",
+        "build": "run-p build:api build:web",
+        "build:api": "npm run build -w src/api",
+        "build:web": "npm run build -w src/web",
+        "preview": "run-p preview:api preview:web",
+        "preview:api": "npm run preview -w src/api",
+        "preview:web": "npm run preview -w src/web",
+        "test": "vitest",
+        "coverage": "vitest run --coverage",
+        "typedoc": "typedoc"
+    },
+    "devDependencies": {
+        "@hboictcloud/api": "1.0.1",
+        "@hboictcloud/eslint-plugin": "1.0.1",
+        "@types/body-parser": "^1.19.5",
+        "@types/connect": "^3.4.38",
+        "@types/cors": "^2.8.17",
+        "@types/estree": "^1.0.5",
+        "@types/express": "^4.17.21",
+        "@types/express-serve-static-core": "^4.19.0",
+        "@types/http-errors": "^2.0.4",
+        "@types/json-schema": "^7.0.15",
+        "@types/mime": "^4.0.0",
+        "@types/node": "^18.19.33",
+        "@typescript-eslint/eslint-plugin": "6.20.0",
+        "@typescript-eslint/parser": "6.20.0",
+        "@vitest/coverage-v8": "^1.6.0",
+        "eslint": "8.56.0",
+        "npm-run-all": "4.1.5",
+        "tsx": "4.7.0",
+        "typedoc": "0.25.13",
+        "typescript": "5.3.3",
+        "vitest": "^1.6.0"
+    },
+    "dependencies": {
+        "@vaadin/router": "^1.7.5",
+        "express-async-handler": "^1.2.0",
+        "jsdom": "^24.0.0",
+        "jsonwebtoken": "^9.0.2",
+        "mime": "^4.0.3",
+        "mysql2": "^3.9.4"
+    }
+}
