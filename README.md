@@ -45,14 +45,6 @@ A complete webshop where:
 - Integrated unit testing (frontend and backend)
 - Contextual research report included in the documentation
 
-## Learning Objectives
-
-- Independently translating a class diagram into working code
-- Integrating frontend, backend, and database systems
-- Working with a team using the SCRUM methodology
-- Writing and running tests (unit & integration)
-- Conducting research within a technical project context
-
 ## Game Data (CSV)
 
 The `docs/games.csv` file contains all information about the available games and is imported into the MySQL database during setup.
